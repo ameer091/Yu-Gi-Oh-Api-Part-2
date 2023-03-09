@@ -31,6 +31,8 @@ MongoClient.connect(stringApp, { useUnifiedTopology: true })
   })
   .catch(error => console.error(error))
 
+
+
 // Make sure you place body-parser before your CRUD handlers!
 
 // The urlencoded method within body-parser tells body-parser to extract data from the <form> element and add them to the body property in the request object.
