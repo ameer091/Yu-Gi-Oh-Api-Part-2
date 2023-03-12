@@ -15,7 +15,7 @@ MongoClient.connect(stringApp, { useUnifiedTopology: true })
     app.get('/', (req, res) => {
       res.sendFile(__dirname + '/index.html')
       })
-    // app.post('/duelists', (req, res) => {//This was required to be commented out in order for all of the code to work
+    // app.post('/duelists', (req, res) => {//This was required to be commented out in order for all of the code to work.  Do not forget this, this ended up being a HUGE PROBLEM.
     //     console.log(req.body)
     //   })
     app.post('/duelists', (req, res) => {
