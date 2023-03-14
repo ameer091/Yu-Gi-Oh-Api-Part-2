@@ -21,7 +21,7 @@ MongoClient.connect(stringApp, { useUnifiedTopology: true })
     app.post('/duelists', (req, res) => {
         duelistCollection.insertOne(req.body)
           .then(result => {
-            console.log(result)
+            res.redirect('/')
           })
           .catch(error => console.error(error))
       })
